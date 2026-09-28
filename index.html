@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio d'Annie Mailloux</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            .masonry {
+                column-count: 1;
+                column-gap: 2rem;
+            }
+            @media (min-width: 640px) {
+                .masonry {
+                    column-count: 2;
+                }
+            }
+            @media (min-width: 1024px) {
+                .masonry {
+                    column-count: 3;
+                }
+            }
+            .break-inside {
+                break-inside: avoid;
+                margin-bottom: 2rem;
+            }
+        </style>
+    </head>
+    <body class="bg-stone-50 text-stone-900 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-stone-200">
+        <header class="sticky top-0 z-40 bg-stone-50/90 backdrop-blur-md border-b border-stone-200/80">
+            <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+                <a href="#" class="text-xl font-light tracking-widest uppercase text-stone-900">Annie Mailloux</a>
+                <nav class="space-x-8 text-sm font-normal tracking-wide text-stone-600">
+                    <a href="#galerie" class="hover:text-stone-900 transition-colors">Œuvres</a>
+                    <a href="#bio" class="hover:text-stone-900 transition-colors">À propos</a>
+                    <a href="#contact" class="hover:text-stone-900 transition-colors">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main id="galerie" class="max-w-7xl mx-auto px-6 pt-12 pb-24 flex-grow w-full">
+            <div class="masonry">
+                <!-- Œuvre 1 -->
+                <div class="break-inside group cursor-pointer" onclick="openModal('images/oeuvre1.jpg', 'Titre de l\'œuvre 1', 'Technique mixte, 2026', 'Disponible')">
+                    <div class="overflow-hidden bg-stone-200 rounded-sm">
+                        <img src="images/oeuvre1.jpg" alt="Titre de l'œuvre 1" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out" loading="lazy" />
+                    </div>
+                    <div class="mt-3 flex justify-between items-baseline text-sm">
+                        <span class="font-medium text-stone-800">Titre de l'œuvre 1</span>
+                        <span class="text-stone-500 text-xs font-mono">2026</span>
+                    </div>
+                </div>
+
+                <!-- Œuvre 2 -->
+                <div class="break-inside group cursor-pointer" onclick="openModal('images/oeuvre2.jpg', 'Titre de l\'œuvre 2', 'Technique mixte, 2026', 'Disponible')">
+                    <div class="overflow-hidden bg-stone-200 rounded-sm">
+                        <img src="images/oeuvre2.jpg" alt="Titre de l'œuvre 2" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out" loading="lazy" />
+                    </div>
+                    <div class="mt-3 flex justify-between items-baseline text-sm">
+                        <span class="font-medium text-stone-800">Titre de l'œuvre 2</span>
+                        <span class="text-stone-500 text-xs font-mono">2026</span>
+                    </div>
+                </div>
+
+                <!-- Œuvre 3 -->
+                <div class="break-inside group cursor-pointer" onclick="openModal('images/oeuvre3.jpg', 'Titre de l\'œuvre 3', 'Technique mixte, 2026', 'Disponible')">
+                    <div class="overflow-hidden bg-stone-200 rounded-sm">
+                        <img src="images/oeuvre3.jpg" alt="Titre de l'œuvre 3" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out" loading="lazy" />
+                    </div>
+                    <div class="mt-3 flex justify-between items-baseline text-sm">
+                        <span class="font-medium text-stone-800">Titre de l'œuvre 3</span>
+                        <span class="text-stone-500 text-xs font-mono">2026</span>
+                    </div>
+                </div>
+
+                <!-- Œuvre 4 -->
+                <div class="break-inside group cursor-pointer" onclick="openModal('images/oeuvre4.jpg', 'Titre de l\'œuvre 4', 'Technique mixte, 2026', 'Disponible')">
+                    <div class="overflow-hidden bg-stone-200 rounded-sm">
+                        <img src="images/oeuvre4.jpg" alt="Titre de l'œuvre 4" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out" loading="lazy" />
+                    </div>
+                    <div class="mt-3 flex justify-between items-baseline text-sm">
+                        <span class="font-medium text-stone-800">Titre de l'œuvre 4</span>
+                        <span class="text-stone-500 text-xs font-mono">2026</span>
+                    </div>
+                </div>
+
+                <!-- Œuvre 5 -->
+                <div class="break-inside group cursor-pointer" onclick="openModal('images/oeuvre5.jpg', 'Titre de l\'œuvre 5', 'Technique mixte, 2026', 'Disponible')">
+                    <div class="overflow-hidden bg-stone-200 rounded-sm">
+                        <img src="images/oeuvre5.jpg" alt="Titre de l'œuvre 5" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out" loading="lazy" />
+                    </div>
+                    <div class="mt-3 flex justify-between items-baseline text-sm">
+                        <span class="font-medium text-stone-800">Titre de l'œuvre 5</span>
+                        <span class="text-stone-500 text-xs font-mono">2026</span>
+                    </div>
+                </div>
+
+                <!-- Œuvre 6 -->
+                <div class="break-inside group cursor-pointer" onclick="openModal('images/oeuvre6.jpg', 'Titre de l\'œuvre 6', 'Technique mixte, 2026', 'Disponible')">
+                    <div class="overflow-hidden bg-stone-200 rounded-sm">
+                        <img src="images/oeuvre6.jpg" alt="Titre de l'œuvre 6" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out" loading="lazy" />
+                    </div>
+                    <div class="mt-3 flex justify-between items-baseline text-sm">
+                        <span class="font-medium text-stone-800">Titre de l'œuvre 6</span>
+                        <span class="text-stone-500 text-xs font-mono">2026</span>
+                    </div>
+                </div>
+
+                <!-- Œuvre 7 -->
+                <div class="break-inside group cursor-pointer" onclick="openModal('images/oeuvre7.jpg', 'Titre de l\'œuvre 7', 'Technique mixte, 2026', 'Disponible')">
+                    <div class="overflow-hidden bg-stone-200 rounded-sm">
+                        <img src="images/oeuvre7.jpg" alt="Titre de l'œuvre 7" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out" loading="lazy" />
+                    </div>
+                    <div class="mt-3 flex justify-between items-baseline text-sm">
+                        <span class="font-medium text-stone-800">Titre de l'œuvre 7</span>
+                        <span class="text-stone-500 text-xs font-mono">2026</span>
+                    </div>
+                </div>
+
+                <!-- Œuvre 8 -->
+                <div class="break-inside group cursor-pointer" onclick="openModal('images/oeuvre8.jpg', 'Titre de l\'œuvre 8', 'Technique mixte, 2026', 'Disponible')">
+                    <div class="overflow-hidden bg-stone-200 rounded-sm">
+                        <img src="images/oeuvre8.jpg" alt="Titre de l'œuvre 8" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out" loading="lazy" />
+                    </div>
+                    <div class="mt-3 flex justify-between items-baseline text-sm">
+                        <span class="font-medium text-stone-800">Titre de l'œuvre 8</span>
+                        <span class="text-stone-500 text-xs font-mono">2026</span>
+                    </div>
+                </div>
+
+                <!-- Œuvre 9 -->
+                <div class="break-inside group cursor-pointer" onclick="openModal('images/oeuvre9.jpg', 'Titre de l\'œuvre 9', 'Technique mixte, 2026', 'Disponible')">
+                    <div class="overflow-hidden bg-stone-200 rounded-sm">
+                        <img src="images/oeuvre9.jpg" alt="Titre de l'œuvre 9" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out" loading="lazy" />
+                    </div>
+                    <div class="mt-3 flex justify-between items-baseline text-sm">
+                        <span class="font-medium text-stone-800">Titre de l'œuvre 9</span>
+                        <span class="text-stone-500 text-xs font-mono">2026</span>
+                    </div>
+                </div>
+
+                <!-- Œuvre 10 -->
+                <div class="break-inside group cursor-pointer" onclick="openModal('images/oeuvre10.jpg', 'Titre de l\'œuvre 10', 'Technique mixte, 2026', 'Disponible')">
+                    <div class="overflow-hidden bg-stone-200 rounded-sm">
+                        <img src="images/oeuvre10.jpg" alt="Titre de l'œuvre 10" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out" loading="lazy" />
+                    </div>
+                    <div class="mt-3 flex justify-between items-baseline text-sm">
+                        <span class="font-medium text-stone-800">Titre de l'œuvre 10</span>
+                        <span class="text-stone-500 text-xs font-mono">2026</span>
+                    </div>
+                </div>
+
+                <!-- Œuvre 11 -->
+                <div class="break-inside group cursor-pointer" onclick="openModal('images/oeuvre11.jpg', 'Titre de l\'œuvre 11', 'Technique mixte, 2026', 'Disponible')">
+                    <div class="overflow-hidden bg-stone-200 rounded-sm">
+                        <img src="images/oeuvre11.jpg" alt="Titre de l'œuvre 11" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out" loading="lazy" />
+                    </div>
+                    <div class="mt-3 flex justify-between items-baseline text-sm">
+                        <span class="font-medium text-stone-800">Titre de l'œuvre 11</span>
+                        <span class="text-stone-500 text-xs font-mono">2026</span>
+                    </div>
+                </div>
+
+                <!-- Œuvre 12 -->
+                <div class="break-inside group cursor-pointer" onclick="openModal('images/oeuvre12.jpg', 'Titre de l\'œuvre 12', 'Technique mixte, 2026', 'Disponible')">
+                    <div class="overflow-hidden bg-stone-200 rounded-sm">
+                        <img src="images/oeuvre12.jpg" alt="Titre de l'œuvre 12" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out" loading="lazy" />
+                    </div>
+                    <div class="mt-3 flex justify-between items-baseline text-sm">
+                        <span class="font-medium text-stone-800">Titre de l'œuvre 12</span>
+                        <span class="text-stone-500 text-xs font-mono">2026</span>
+                    </div>
+                </div>
+
+                <!-- Œuvre 13 -->
+                <div class="break-inside group cursor-pointer" onclick="openModal('images/oeuvre13.jpg', 'Titre de l\'œuvre 13', 'Technique mixte, 2026', 'Disponible')">
+                    <div class="overflow-hidden bg-stone-200 rounded-sm">
+                        <img src="images/oeuvre13.jpg" alt="Titre de l'œuvre 13" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out" loading="lazy" />
+                    </div>
+                    <div class="mt-3 flex justify-between items-baseline text-sm">
+                        <span class="font-medium text-stone-800">Titre de l'œuvre 13</span>
+                        <span class="text-stone-500 text-xs font-mono">2026</span>
+                    </div>
+                </div>
+
+                <!-- Œuvre 14 -->
+                <div class="break-inside group cursor-pointer" onclick="openModal('images/oeuvre14.jpg', 'Titre de l\'œuvre 14', 'Technique mixte, 2026', 'Disponible')">
+                    <div class="overflow-hidden bg-stone-200 rounded-sm">
+                        <img src="images/oeuvre14.jpg" alt="Titre de l'œuvre 14" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out" loading="lazy" />
+                    </div>
+                    <div class="mt-3 flex justify-between items-baseline text-sm">
+                        <span class="font-medium text-stone-800">Titre de l'œuvre 14</span>
+                        <span class="text-stone-500 text-xs font-mono">2026</span>
+                    </div>
+                </div>
+
+                <!-- Œuvre 15 -->
+                <div class="break-inside group cursor-pointer" onclick="openModal('images/oeuvre15.jpg', 'Titre de l\'œuvre 15', 'Technique mixte, 2026', 'Disponible')">
+                    <div class="overflow-hidden bg-stone-200 rounded-sm">
+                        <img src="images/oeuvre15.jpg" alt="Titre de l'œuvre 15" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out" loading="lazy" />
+                    </div>
+                    <div class="mt-3 flex justify-between items-baseline text-sm">
+                        <span class="font-medium text-stone-800">Titre de l'œuvre 15</span>
+                        <span class="text-stone-500 text-xs font-mono">2026</span>
+                    </div>
+                </div>
+
+                <!-- Œuvre 16 -->
+                <div class="break-inside group cursor-pointer" onclick="openModal('images/oeuvre16.jpg', 'Titre de l\'œuvre 16', 'Technique mixte, 2026', 'Disponible')">
+                    <div class="overflow-hidden bg-stone-200 rounded-sm">
+                        <img src="images/oeuvre16.jpg" alt="Titre de l'œuvre 16" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out" loading="lazy" />
+                    </div>
+                    <div class="mt-3 flex justify-between items-baseline text-sm">
+                        <span class="font-medium text-stone-800">Titre de l'œuvre 16</span>
+                        <span class="text-stone-500 text-xs font-mono">2026</span>
+                    </div>
+                </div>
+
+                <!-- Œuvre 17 -->
+                <div class="break-inside group cursor-pointer" onclick="openModal('images/oeuvre17.jpg', 'Titre de l\'œuvre 17', 'Technique mixte, 2026', 'Disponible')">
+                    <div class="overflow-hidden bg-stone-200 rounded-sm">
+                        <img src="images/oeuvre17.jpg" alt="Titre de l'œuvre 17" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out" loading="lazy" />
+                    </div>
+                    <div class="mt-3 flex justify-between items-baseline text-sm">
+                        <span class="font-medium text-stone-800">Titre de l'œuvre 17</span>
+                        <span class="text-stone-500 text-xs font-mono">2026</span>
+                    </div>
+                </div>
+
+                <!-- Œuvre 18 -->
+                <div class="break-inside group cursor-pointer" onclick="openModal('images/oeuvre18.jpg', 'Titre de l\'œuvre 18', 'Technique mixte, 2026', 'Disponible')">
+                    <div class="overflow-hidden bg-stone-200 rounded-sm">
+                        <img src="images/oeuvre18.jpg" alt="Titre de l'œuvre 18" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out" loading="lazy" />
+                    </div>
+                    <div class="mt-3 flex justify-between items-baseline text-sm">
+                        <span class="font-medium text-stone-800">Titre de l'œuvre 18</span>
+                        <span class="text-stone-500 text-xs font-mono">2026</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section id="bio" class="bg-stone-100 border-t border-stone-200 py-24">
+            <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-5">
+                    <div class="overflow-hidden bg-stone-300 rounded-sm shadow-md">
+                        <img src="images/artist-photo.jpg" alt="Photo de l'artiste" class="w-full h-auto object-cover" />
+                    </div>
+                </div>
+
+                <div class="md:col-span-7 space-y-6">
+                    <h2 class="text-xs uppercase tracking-widest text-stone-500 font-semibold">À propos</h2>
+                    <h3 class="text-2xl font-light tracking-wide text-stone-900">Annie Mailloux</h3>
+
+                    <p class="text-base text-stone-700 leading-relaxed font-light">
+                        Texte de présentation de l'artiste.
+                    </p>
+
+                    <!-- Expositions -->
+                    <div class="pt-4 border-t border-stone-200/80">
+                        <h4 class="text-xs uppercase tracking-wider text-stone-500 font-medium mb-3">Expositions récentes</h4>
+                        <ul class="text-sm text-stone-600 space-y-1 font-light">
+                            <li><strong class="font-normal text-stone-800">2026</strong> — Symposium et expositions régionales</li>
+                            <li><strong class="font-normal text-stone-800">2025</strong> — Expositions collectives</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="bg-stone-900 text-stone-100 py-16">
+            <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div>
+                    <h3 class="text-xl font-light tracking-wide">Me contacter</h3>
+                    <p class="text-sm text-stone-400 mt-1">Pour toute demande d'information, acquisition ou exposition.</p>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="mailto:contact@domaine.com" class="px-5 py-2.5 bg-stone-100 text-stone-900 text-sm font-medium rounded hover:bg-stone-200 transition">Envoyer un courriel</a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener" class="text-sm text-stone-400 hover:text-white transition">Facebook ↗</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Fenêtre modale (Lightbox) -->
+        <div id="lightbox" class="fixed inset-0 bg-stone-950/95 hidden z-50 flex items-center justify-center p-4 backdrop-blur-sm" onclick="closeModal()">
+            <div class="max-w-5xl max-h-full flex flex-col items-center" onclick="event.stopPropagation()">
+                <img id="modal-img" src="" class="max-h-[80vh] w-auto object-contain shadow-2xl rounded-sm" />
+                <div class="mt-6 text-center text-white space-y-1">
+                    <h2 id="modal-title" class="text-xl font-light tracking-wide"></h2>
+                    <p id="modal-desc" class="text-sm text-stone-400 font-light"></p>
+                    <span id="modal-status" class="inline-block mt-2 text-xs uppercase tracking-widest px-2.5 py-1 bg-stone-800 text-stone-300 rounded"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Script Lightbox -->
+        <script>
+            function openModal(src, title, desc, status) {
+                document.getElementById("modal-img").src = src;
+                document.getElementById("modal-title").innerText = title;
+                document.getElementById("modal-desc").innerText = desc;
+                document.getElementById("modal-status").innerText = status;
+                document.getElementById("lightbox").classList.remove("hidden");
+            }
+            function closeModal() {
+                document.getElementById("lightbox").classList.add("hidden");
+            }
+        </script>
+    </body>
+</html>
