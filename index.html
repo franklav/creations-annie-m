@@ -27,17 +27,15 @@
         </style>
     </head>
     <body class="bg-stone-50 text-stone-900 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-stone-200">
-        <header class="sticky top-0 z-40 bg-stone-50/90 backdrop-blur-md border-b border-stone-200/80">
-            <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
-                <a href="#" class="text-xl font-light tracking-widest uppercase text-stone-900">Annie Mailloux</a>
-                <nav class="space-x-8 text-sm font-normal tracking-wide text-stone-600">
-                    <a href="#galerie" class="hover:text-stone-900 transition-colors">Œuvres</a>
-                    <a href="#bio" class="hover:text-stone-900 transition-colors">À propos</a>
-                    <a href="#contact" class="hover:text-stone-900 transition-colors">Contact</a>
-                </nav>
-            </div>
-        </header>
+        <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row justify-between items-center border-b border-stone-200 gap-4">
+            <a href="#" class="text-xl font-light tracking-widest text-stone-900 uppercase text-center sm:text-left whitespace-nowrap">Annie Mailloux</a>
 
+            <nav class="flex items-center space-x-6 text-sm text-stone-600 font-medium">
+                <a href="#oeuvres" class="hover:text-stone-900 transition">Œuvres</a>
+                <a href="#apropos" class="hover:text-stone-900 transition">À propos</a>
+                <a href="#contact" class="hover:text-stone-900 transition">Contact</a>
+            </nav>
+        </header>
         <main id="galerie" class="max-w-7xl mx-auto px-6 pt-12 pb-24 flex-grow w-full">
             <div class="masonry">
                 <!-- Œuvre 1 -->
@@ -162,12 +160,12 @@
                 </div>
 
                 <!-- Œuvre 12 -->
-                <div class="break-inside group cursor-pointer" onclick="openModal('images/oeuvre12.jpg', 'Titre de l\'œuvre 12', 'Technique mixte, 2026', 'Disponible')">
+                <div class="break-inside group cursor-pointer" onclick="openModal('images/oeuvre12.jpg', 'Rio', 'Acrylique sur toile, 2026', 'Disponible')">
                     <div class="overflow-hidden bg-stone-200 rounded-sm">
-                        <img src="images/oeuvre12.jpg" alt="Titre de l'œuvre 12" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out" loading="lazy" />
+                        <img src="images/oeuvre12.jpg" alt="Rio" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out" loading="lazy" />
                     </div>
                     <div class="mt-3 flex justify-between items-baseline text-sm">
-                        <span class="font-medium text-stone-800">Titre de l'œuvre 12</span>
+                        <span class="font-medium text-stone-800">Rio</span>
                         <span class="text-stone-500 text-xs font-mono">2026</span>
                     </div>
                 </div>
@@ -252,9 +250,7 @@
                     <h2 class="text-xs uppercase tracking-widest text-stone-500 font-semibold">À propos</h2>
                     <h3 class="text-2xl font-light tracking-wide text-stone-900">Annie Mailloux</h3>
 
-                    <p class="text-base text-stone-700 leading-relaxed font-light">
-                        Texte de présentation de l'artiste.
-                    </p>
+                    <p class="text-base text-stone-700 leading-relaxed font-light">Texte de présentation de l'artiste.</p>
 
                     <!-- Expositions -->
                     <div class="pt-4 border-t border-stone-200/80">
