@@ -9,7 +9,7 @@
         <!-- Open Graph / Réseaux sociaux -->
         <meta property="og:title" content="Annie Mailloux — Artiste Peintre" />
         <meta property="og:description" content="Galerie d'art et portfolio des peintures originales d'Annie Mailloux." />
-        <meta property="og:image" content="https://creationsanniem.com/images/oeuvre12.jpg" />
+        <meta property="og:image" content="https://creationsanniem.com/images/ivoire.jpg" />
         <meta property="og:url" content="https://creationsanniem.com/" />
         <meta property="og:type" content="website" />
 
@@ -58,7 +58,7 @@
             <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
                 <div class="md:col-span-5">
                     <div class="overflow-hidden bg-stone-300 rounded-sm shadow-md">
-                        <img src="images/artist-photo.jpg" alt="Photo d'Annie Mailloux" class="w-full h-auto object-cover" />
+                        <img src="images/annie-mailloux.jpg" alt="Photo d'Annie Mailloux" class="w-full h-auto object-cover" />
                     </div>
                 </div>
 
@@ -77,8 +77,9 @@
                     <div class="pt-4 border-t border-stone-200/80">
                         <h4 class="text-xs uppercase tracking-wider text-stone-500 font-medium mb-3">Expositions récentes</h4>
                         <ul class="text-sm text-stone-600 space-y-1 font-light">
-                            <li><strong class="font-normal text-stone-800">2026</strong> — Symposium de Lavaltrie</li>
-                            <li><strong class="font-normal text-stone-800">2025</strong> — Décemb'Art • Exposition collective • Galerie Ambigu</li>
+                            <li><strong class="font-normal text-stone-800">2026</strong> — Symposium • Journées de la culture de Lavaltrie</li>
+                            <li><strong class="font-normal text-stone-800">2025</strong> — Galerie d'art citoyenne • Exposition individuelle • Parc Charles-De Gaulle, Repentigny</li>
+                            <li><strong class="font-normal text-stone-800">2025</strong> — Décemb'Art • Exposition collective • Galerie Ambigu, Montréal</li>
                         </ul>
                     </div>
                 </div>
@@ -92,9 +93,8 @@
                     <p class="text-sm text-stone-400 mt-1">Pour toute demande d'information, acquisition ou exposition.</p>
                 </div>
                 <div class="flex items-center space-x-6">
-                    <!-- Bouton courriel protégé contre le spam -->
                     <a id="email-btn" href="#" class="px-5 py-2.5 bg-stone-100 text-stone-900 text-sm font-medium rounded hover:bg-stone-200 transition">Envoyer un courriel</a>
-                    <a href="https://facebook.com/Cre" target="_blank" rel="noopener" class="text-sm text-stone-400 hover:text-white transition">Facebook ↗</a>
+                    <a href="https://facebook.com/CreationsAnnieM" target="_blank" rel="noopener" class="text-sm text-stone-400 hover:text-white transition">Facebook ↗</a>
                 </div>
             </div>
         </footer>
@@ -111,18 +111,15 @@
             </div>
         </div>
 
-        <!-- Scripts JavaScript -->
         <script>
             let catalogData = [];
 
-            // 1. Chargement et génération de la galerie depuis le fichier JSON
             document.addEventListener("DOMContentLoaded", function () {
-                // Obfuscation anti-spam pour l'adresse courriel
                 const user = "contact";
                 const domain = "creationsanniem.com";
-                document.getElementById("email-btn").href = "mailto:" + user + "@" + domain;
+                const emailBtn = document.getElementById("email-btn");
+                if (emailBtn) emailBtn.href = "mailto:" + user + "@" + domain;
 
-                // Chargement des œuvres
                 fetch('oeuvres.json')
                     .then(response => response.json())
                     .then(data => {
@@ -135,17 +132,24 @@
             function renderGallery(items) {
                 const grid = document.getElementById('gallery-grid');
                 grid.innerHTML = items.map((item, index) => {
-                    const specs = [item.technique, item.dimensions].filter(Boolean).join(' • ');
+                    const isAvailable = !item.statut || item.statut === "Disponible";
+
+                    // Badge de statut sur la vignette si non disponible
+                    const statusBadge = !isAvailable ?
+                        `<span class="absolute top-3 right-3 bg-stone-900/80 backdrop-blur-md text-stone-100 text-xs tracking-wider uppercase px-2.5 py-1 rounded shadow">
+                            ${item.statut}
+                         </span>` : '';
+
+                    const imgStyle = !isAvailable ? "opacity-90 contrast-[0.95]" : "";
+
                     return `
                         <div class="break-inside group cursor-pointer" onclick="openModalByIndex(${index})">
-                            <div class="overflow-hidden bg-stone-200 rounded-sm">
-                                <img src="${item.image}" alt="${item.titre}" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out" loading="lazy" />
+                            <div class="relative overflow-hidden bg-stone-200 rounded-sm">
+                                <img src="${item.image}" alt="${item.titre}" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500 ease-out ${imgStyle}" loading="lazy" />
+                                ${statusBadge}
                             </div>
                             <div class="mt-3 flex justify-between items-baseline text-sm">
-                                <div>
-                                    <p class="font-medium text-stone-800">${item.titre}</p>
-                                    ${specs ? `<p class="text-xs text-stone-500 mt-0.5">${specs}</p>` : ''}
-                                </div>
+                                <p class="font-medium text-stone-800">${item.titre}</p>
                                 <span class="text-stone-500 text-xs font-mono">${item.annee}</span>
                             </div>
                         </div>
@@ -153,7 +157,6 @@
                 }).join('');
             }
 
-            // 2. Gestion de la Lightbox
             function openModalByIndex(index) {
                 const item = catalogData[index];
                 document.getElementById("modal-img").src = item.image;
@@ -164,7 +167,19 @@
                 if (item.chassis) descParts.push(item.chassis);
 
                 document.getElementById("modal-desc").innerText = descParts.filter(Boolean).join(" • ");
-                document.getElementById("modal-status").innerText = item.statut || "Disponible";
+
+                const statusEl = document.getElementById("modal-status");
+                const statusText = item.statut || "Disponible";
+                statusEl.innerText = statusText;
+
+                if (statusText === "Disponible") {
+                    statusEl.className = "inline-block mt-3 text-xs uppercase tracking-widest px-3 py-1 bg-emerald-950 text-emerald-300 border border-emerald-800/50 rounded";
+                } else if (statusText === "Vendu") {
+                    statusEl.className = "inline-block mt-3 text-xs uppercase tracking-widest px-3 py-1 bg-stone-800 text-stone-400 border border-stone-700 rounded";
+                } else {
+                    statusEl.className = "inline-block mt-3 text-xs uppercase tracking-widest px-3 py-1 bg-amber-950 text-amber-300 border border-amber-800/50 rounded";
+                }
+
                 document.getElementById("lightbox").classList.remove("hidden");
                 document.body.style.overflow = "hidden";
             }
