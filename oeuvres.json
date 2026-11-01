@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "titre": "Titre de l'œuvre 1",
+    "titre": "Lion",
     "image": "images/oeuvre1.jpg",
     "technique": "Technique mixte",
     "annee": "2026",
@@ -83,15 +83,15 @@
     "id": 9,
     "titre": "Titre de l'œuvre 9",
     "image": "images/oeuvre9.jpg",
-    "technique": "Technique mixte",
+    "technique": "Acrylique sur toile",
     "annee": "2026",
-    "dimensions": "",
-    "chassis": "",
+    "dimensions": "24 x 48 po",
+    "chassis": "Mince",
     "statut": "Disponible"
   },
   {
     "id": 10,
-    "titre": "Titre de l'œuvre 10",
+    "titre": "Rio",
     "image": "images/oeuvre10.jpg",
     "technique": "Technique mixte",
     "annee": "2026",
