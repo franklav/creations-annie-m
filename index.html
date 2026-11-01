@@ -89,7 +89,7 @@
                 <div class="flex items-center space-x-6">
                     <!-- Bouton courriel protégé contre le spam -->
                     <a id="email-btn" href="#" class="px-5 py-2.5 bg-stone-100 text-stone-900 text-sm font-medium rounded hover:bg-stone-200 transition">Envoyer un courriel</a>
-                    <a href="https://facebook.com" target="_blank" rel="noopener" class="text-sm text-stone-400 hover:text-white transition">Facebook ↗</a>
+                    <a href="https://facebook.com/Cre" target="_blank" rel="noopener" class="text-sm text-stone-400 hover:text-white transition">Facebook ↗</a>
                 </div>
             </div>
         </footer>
@@ -130,7 +130,7 @@
             function renderGallery(items) {
                 const grid = document.getElementById('gallery-grid');
                 grid.innerHTML = items.map((item, index) => {
-                    const specs = [item.dimensions, item.chassis].filter(Boolean).join(' • ');
+                    const specs = [item.technique, item.dimensions].filter(Boolean).join(' • ');
                     return `
                         <div class="break-inside group cursor-pointer" onclick="openModalByIndex(${index})">
                             <div class="overflow-hidden bg-stone-200 rounded-sm">
@@ -156,7 +156,7 @@
 
                 let descParts = [item.technique, item.annee];
                 if (item.dimensions) descParts.push(item.dimensions);
-                if (item.chassis) descParts.push(`(${item.chassis})`);
+                if (item.chassis) descParts.push(item.chassis);
 
                 document.getElementById("modal-desc").innerText = descParts.filter(Boolean).join(" • ");
                 document.getElementById("modal-status").innerText = item.statut || "Disponible";
