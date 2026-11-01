@@ -58,7 +58,7 @@
             <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
                 <div class="md:col-span-5">
                     <div class="overflow-hidden bg-stone-300 rounded-sm shadow-md">
-                        <img src="images/artist-photo.jpg" alt="Photo d'Annie Mailloux" class="w-full h-auto object-cover" />
+                        <img src="images/annie-mailloux.jpg" alt="Photo d'Annie Mailloux" class="w-full h-auto object-cover" />
                     </div>
                 </div>
 
@@ -115,7 +115,6 @@
             let catalogData = [];
 
             document.addEventListener("DOMContentLoaded", function () {
-                // Obfuscation anti-spam pour l'adresse courriel
                 const user = "contact";
                 const domain = "creationsanniem.com";
                 const emailBtn = document.getElementById("email-btn");
@@ -133,9 +132,9 @@
             function renderGallery(items) {
                 const grid = document.getElementById('gallery-grid');
                 grid.innerHTML = items.map((item, index) => {
-                    const specs = [item.dimensions, item.chassis].filter(Boolean).join(' • ');
                     const isAvailable = !item.statut || item.statut === "Disponible";
 
+                    // Badge de statut sur la vignette si non disponible
                     const statusBadge = !isAvailable ?
                         `<span class="absolute top-3 right-3 bg-stone-900/80 backdrop-blur-md text-stone-100 text-xs tracking-wider uppercase px-2.5 py-1 rounded shadow">
                             ${item.statut}
@@ -150,10 +149,7 @@
                                 ${statusBadge}
                             </div>
                             <div class="mt-3 flex justify-between items-baseline text-sm">
-                                <div>
-                                    <p class="font-medium text-stone-800">${item.titre}</p>
-                                    ${specs ? `<p class="text-xs text-stone-500 mt-0.5">${specs}</p>` : ''}
-                                </div>
+                                <p class="font-medium text-stone-800">${item.titre}</p>
                                 <span class="text-stone-500 text-xs font-mono">${item.annee}</span>
                             </div>
                         </div>
@@ -168,11 +164,10 @@
 
                 let descParts = [item.technique, item.annee];
                 if (item.dimensions) descParts.push(item.dimensions);
-                if (item.chassis) descParts.push(`(${item.chassis})`);
+                if (item.chassis) descParts.push(item.chassis);
 
                 document.getElementById("modal-desc").innerText = descParts.filter(Boolean).join(" • ");
 
-                // Gestion du style et du texte du statut dans la modale
                 const statusEl = document.getElementById("modal-status");
                 const statusText = item.statut || "Disponible";
                 statusEl.innerText = statusText;
@@ -182,7 +177,6 @@
                 } else if (statusText === "Vendu") {
                     statusEl.className = "inline-block mt-3 text-xs uppercase tracking-widest px-3 py-1 bg-stone-800 text-stone-400 border border-stone-700 rounded";
                 } else {
-                    // Pour "Réservé", "Collection privée", etc.
                     statusEl.className = "inline-block mt-3 text-xs uppercase tracking-widest px-3 py-1 bg-amber-950 text-amber-300 border border-amber-800/50 rounded";
                 }
 
