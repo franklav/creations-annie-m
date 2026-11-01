@@ -140,7 +140,7 @@
     "statut": "Disponible"
   },
   {
-    "id": 16,
+    "id": 15,
     "titre": "Ma rivière Squatec",
     "image": "images/ma-rivière-squatec.jpg",
     "technique": "Acrylique sur toile",
@@ -150,7 +150,7 @@
     "statut": "Vendu"
   },
   {
-    "id": 17,
+    "id": 16,
     "titre": "Vagues",
     "image": "images/vagues.jpg",
     "technique": "Acrylique sur toile",
@@ -160,7 +160,7 @@
     "statut": "Vendu"
   },
   {
-    "id": 18,
+    "id": 17,
     "titre": "Dualité",
     "image": "images/dualité.jpg",
     "technique": "Acrylique sur toile",
@@ -170,7 +170,7 @@
     "statut": "Vendu"
   },
   {
-    "id": 19,
+    "id": 18,
     "titre": "Toréadore",
     "image": "images/toreadore.jpg",
     "technique": "Acrylique sur toile",
