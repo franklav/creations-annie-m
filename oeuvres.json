@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "titre": "Lion",
+    "image": "images/oeuvre1.jpg",
+    "technique": "Technique mixte",
+    "annee": "2026",
+    "dimensions": "",
+    "chassis": "",
+    "statut": "Disponible"
+  },
+  {
+    "id": 2,
+    "titre": "Titre de l'œuvre 2",
+    "image": "images/oeuvre2.jpg",
+    "technique": "Technique mixte",
+    "annee": "2026",
+    "dimensions": "",
+    "chassis": "",
+    "statut": "Disponible"
+  },
+  {
+    "id": 3,
+    "titre": "Titre de l'œuvre 3",
+    "image": "images/oeuvre3.jpg",
+    "technique": "Technique mixte",
+    "annee": "2026",
+    "dimensions": "",
+    "chassis": "",
+    "statut": "Disponible"
+  },
+  {
+    "id": 4,
+    "titre": "Titre de l'œuvre 4",
+    "image": "images/oeuvre4.jpg",
+    "technique": "Technique mixte",
+    "annee": "2026",
+    "dimensions": "",
+    "chassis": "",
+    "statut": "Disponible"
+  },
+  {
+    "id": 5,
+    "titre": "Titre de l'œuvre 5",
+    "image": "images/oeuvre5.jpg",
+    "technique": "Technique mixte",
+    "annee": "2026",
+    "dimensions": "",
+    "chassis": "",
+    "statut": "Disponible"
+  },
+  {
+    "id": 6,
+    "titre": "Titre de l'œuvre 6",
+    "image": "images/oeuvre6.jpg",
+    "technique": "Technique mixte",
+    "annee": "2026",
+    "dimensions": "",
+    "chassis": "",
+    "statut": "Disponible"
+  },
+  {
+    "id": 7,
+    "titre": "Bloup bloup",
+    "image": "images/bloup-bloup.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2025",
+    "dimensions": "24 x 24 po",
+    "chassis": "Châssis mince",
+    "statut": "Collection privée"
+  },
+  {
+    "id": 8,
+    "titre": "Titre de l'œuvre 8",
+    "image": "images/oeuvre8.jpg",
+    "technique": "Technique mixte",
+    "annee": "2026",
+    "dimensions": "",
+    "chassis": "",
+    "statut": "Disponible"
+  },
+  {
+    "id": 9,
+    "titre": "Titre de l'œuvre 9",
+    "image": "images/oeuvre9.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2026",
+    "dimensions": "24 x 48 po",
+    "chassis": "Mince",
+    "statut": "Disponible"
+  },
+  {
+    "id": 10,
+    "titre": "Rio",
+    "image": "images/oeuvre10.jpg",
+    "technique": "Technique mixte",
+    "annee": "2026",
+    "dimensions": "",
+    "chassis": "",
+    "statut": "Disponible"
+  },
+  {
+    "id": 11,
+    "titre": "Titre de l'œuvre 11",
+    "image": "images/oeuvre11.jpg",
+    "technique": "Technique mixte",
+    "annee": "2026",
+    "dimensions": "",
+    "chassis": "",
+    "statut": "Disponible"
+  },
+  {
+    "id": 12,
+    "titre": "Rio",
+    "image": "images/rio.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2026",
+    "dimensions": "24 x 48 po",
+    "chassis": "Châssis mince",
+    "statut": "Disponible"
+  },
+  {
+    "id": 13,
+    "titre": "Titre de l'œuvre 13",
+    "image": "images/oeuvre13.jpg",
+    "technique": "Technique mixte",
+    "annee": "2026",
+    "dimensions": "",
+    "chassis": "",
+    "statut": "Disponible"
+  },
+  {
+    "id": 14,
+    "titre": "Renaissance",
+    "image": "images/renaissance.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2026",
+    "dimensions": "30 x 40 po",
+    "chassis": "Châssis mince",
+    "statut": "Disponible"
+  },
+  {
+    "id": 15,
+    "titre": "Titre de l'œuvre 15",
+    "image": "images/oeuvre15.jpg",
+    "technique": "Technique mixte",
+    "annee": "2026",
+    "dimensions": "",
+    "chassis": "",
+    "statut": "Disponible"
+  },
+  {
+    "id": 16,
+    "titre": "Titre de l'œuvre 16",
+    "image": "images/oeuvre16.jpg",
+    "technique": "Technique mixte",
+    "annee": "2026",
+    "dimensions": "",
+    "chassis": "",
+    "statut": "Disponible"
+  },
+  {
+    "id": 17,
+    "titre": "Titre de l'œuvre 17",
+    "image": "images/oeuvre17.jpg",
+    "technique": "Technique mixte",
+    "annee": "2026",
+    "dimensions": "",
+    "chassis": "",
+    "statut": "Disponible"
+  },
+  {
+    "id": 18,
+    "titre": "Titre de l'œuvre 18",
+    "image": "images/oeuvre18.jpg",
+    "technique": "Technique mixte",
+    "annee": "2026",
+    "dimensions": "",
+    "chassis": "",
+    "statut": "Disponible"
+  }
+]
