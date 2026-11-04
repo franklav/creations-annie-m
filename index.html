@@ -67,10 +67,10 @@
                     <h3 class="text-2xl font-light tracking-wide text-stone-900">Annie Mailloux</h3>
 
                     <p class="text-base text-stone-700 leading-relaxed font-light">
-                        <strong>Annie Mailloux</strong> est une artiste peintre autodidacte dont la pratique s'articule autour du regard, de l'émotion et de la présence. À travers une peinture animalière expressive et contemporaine, elle cherche à capter l'intensité unique qui émane du regard des animaux pour instaurer un véritable dialogue silencieux avec l'observateur.
+                        <strong>Annie Mailloux</strong> est une artiste peintre autodidacte dont la pratique s'articule autour du regard, de l'émotion et de la présence. À travers une démarche expressive et contemporaine abordant des thématiques variées, elle cherche à capter l'intensité unique de chaque sujet pour instaurer un véritable dialogue silencieux avec l'observateur.
                     </p>
                     <p class="text-base text-stone-700 leading-relaxed font-light">
-                        Travaillant principalement à l'acrylique, elle joue avec des couleurs riches, des contrastes marqués et des juxtapositions de matières. Sa démarche navigue librement entre figuration et abstraction pour explorer la dualité entre puissance et vulnérabilité, offrant des œuvres profondément vivantes et poignantes.
+                        Travaillant principalement à l'acrylique, elle joue avec des couleurs riches, des contrastes marqués et des juxtapositions de matières. Son œuvre navigue librement entre figuration et abstraction pour explorer la dualité entre puissance et vulnérabilité, offrant des créations profondément vivantes et poignantes.
                     </p>
 
                     <!-- Expositions -->
@@ -133,8 +133,6 @@
                 const grid = document.getElementById('gallery-grid');
                 grid.innerHTML = items.map((item, index) => {
                     const isAvailable = !item.statut || item.statut === "Disponible";
-
-                    // Badge de statut sur la vignette si non disponible
                     const statusBadge = !isAvailable ?
                         `<span class="absolute top-3 right-3 bg-stone-900/80 backdrop-blur-md text-stone-100 text-xs tracking-wider uppercase px-2.5 py-1 rounded shadow">
                             ${item.statut}
