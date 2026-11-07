@@ -6,7 +6,6 @@
         <title>Annie Mailloux — Artiste Peintre | Galerie d'Art</title>
         <meta name="description" content="Découvrez le portfolio d'art abstrait et figuratif d'Annie Mailloux. Œuvres originales à l'acrylique." />
 
-        <!-- Open Graph / Réseaux sociaux -->
         <meta property="og:title" content="Annie Mailloux — Artiste Peintre" />
         <meta property="og:description" content="Galerie d'art et portfolio des peintures originales d'Annie Mailloux." />
         <meta property="og:image" content="https://creationsanniem.com/images/ivoire.jpg" />
@@ -36,10 +35,8 @@
         </style>
     </head>
     <body class="bg-stone-50 text-stone-900 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-stone-200">
-        <!-- Header ajusté pour mobile -->
         <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row justify-between items-center border-b border-stone-200 gap-4">
             <a href="#" class="text-xl font-light tracking-widest text-stone-900 uppercase text-center sm:text-left whitespace-nowrap">Annie Mailloux</a>
-
             <nav class="flex items-center space-x-6 text-sm text-stone-600 font-medium">
                 <a href="#galerie" class="hover:text-stone-900 transition">Œuvres</a>
                 <a href="#bio" class="hover:text-stone-900 transition">À propos</a>
@@ -48,9 +45,7 @@
         </header>
 
         <main id="galerie" class="max-w-7xl mx-auto px-6 pt-12 pb-24 flex-grow w-full">
-            <!-- Grille dynamique -->
             <div id="gallery-grid" class="masonry">
-                <!-- Les œuvres sont injectées automatiquement depuis oeuvres.json -->
             </div>
         </main>
 
@@ -67,13 +62,12 @@
                     <h3 class="text-2xl font-light tracking-wide text-stone-900">Annie Mailloux</h3>
 
                     <p class="text-base text-stone-700 leading-relaxed font-light">
-                        <strong>Annie Mailloux</strong> est une artiste peintre autodidacte dont la pratique s'articule autour du regard, de l'émotion et de la présence. À travers une peinture animalière expressive et contemporaine, elle cherche à capter l'intensité unique qui émane du regard des animaux pour instaurer un véritable dialogue silencieux avec l'observateur.
+                        <strong>Annie Mailloux</strong> est une artiste peintre autodidacte dont la pratique s'articule autour du regard, de l'émotion et de la présence. À travers une démarche expressive et contemporaine abordant des thématiques variées, elle cherche à capter l'intensité unique de chaque sujet pour instaurer un véritable dialogue silencieux avec l'observateur.
                     </p>
                     <p class="text-base text-stone-700 leading-relaxed font-light">
-                        Travaillant principalement à l'acrylique, elle joue avec des couleurs riches, des contrastes marqués et des juxtapositions de matières. Sa démarche navigue librement entre figuration et abstraction pour explorer la dualité entre puissance et vulnérabilité, offrant des œuvres profondément vivantes et poignantes.
+                        Travaillant principalement à l'acrylique, elle joue avec des couleurs riches, des contrastes marqués et des juxtapositions de matières. Son œuvre navigue librement entre figuration et abstraction pour explorer la dualité entre puissance et vulnérabilité, offrant des créations profondément vivantes et poignantes.
                     </p>
 
-                    <!-- Expositions -->
                     <div class="pt-4 border-t border-stone-200/80">
                         <h4 class="text-xs uppercase tracking-wider text-stone-500 font-medium mb-3">Expositions récentes</h4>
                         <ul class="text-sm text-stone-600 space-y-1 font-light">
@@ -99,7 +93,6 @@
             </div>
         </footer>
 
-        <!-- Fenêtre modale (Lightbox) -->
         <div id="lightbox" class="fixed inset-0 bg-stone-950/95 hidden z-50 flex items-center justify-center p-4 backdrop-blur-sm" onclick="closeModal()">
             <div class="max-w-5xl max-h-full flex flex-col items-center" onclick="event.stopPropagation()">
                 <img id="modal-img" src="" class="max-h-[80vh] w-auto object-contain shadow-2xl rounded-sm" />
@@ -133,8 +126,6 @@
                 const grid = document.getElementById('gallery-grid');
                 grid.innerHTML = items.map((item, index) => {
                     const isAvailable = !item.statut || item.statut === "Disponible";
-
-                    // Badge de statut sur la vignette si non disponible
                     const statusBadge = !isAvailable ?
                         `<span class="absolute top-3 right-3 bg-stone-900/80 backdrop-blur-md text-stone-100 text-xs tracking-wider uppercase px-2.5 py-1 rounded shadow">
                             ${item.statut}
