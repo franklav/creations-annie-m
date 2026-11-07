@@ -9,6 +9,27 @@
     "chassis": "Châssis mince",
     "statut": "Vendu"
   },
+
+  {
+    "id": 24,
+    "titre": "Résilience",
+    "image": "images/résilience.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2026",
+    "dimensions": "36 x 36 po",
+    "chassis": "Châssis gallerie",
+    "statut": "Disponible"
+  },
+  {
+    "id": 25,
+    "titre": "Émergence",
+    "image": "images/émergence.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2026",
+    "dimensions": "24 x 36 po",
+    "chassis": "Châssis gallerie",
+    "statut": "Disponible"
+  },
   {
     "id": 2,
     "titre": "Khâmon",
@@ -57,7 +78,7 @@
     "annee": "2025",
     "dimensions": "18 x 24 po",
     "chassis": "Châssis mince",
-    "statut": "Collection privée"
+    "statut": "Vendu"
   },
   {
     "id": 7,
@@ -67,17 +88,7 @@
     "annee": "2025",
     "dimensions": "18 x 24 po",
     "chassis": "Châssis mince",
-    "statut": "Collection privée"
-  },
-  {
-    "id": 8,
-    "titre": "Fleurs de minuit",
-    "image": "images/fleurs-de-minuit.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2025",
-    "dimensions": "16 x 48 po",
-    "chassis": "Châssis gallerie",
-    "statut": "Collection privée"
+    "statut": "Vendu"
   },
   {
     "id": 9,
@@ -89,6 +100,16 @@
     "chassis": "Châssis gallerie",
     "statut": "Vendu"
   },
+    {
+    "id": 21,
+    "titre": "Mon ours n'ours",
+    "image": "images/mon-ours-n-ours.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2025",
+    "dimensions": "36 x 48 po",
+    "chassis": "Châssis mince",
+    "statut": "Disponible"
+  },
   {
     "id": 10,
     "titre": "Panache givré",
@@ -97,7 +118,7 @@
     "annee": "2024",
     "dimensions": "24 x 24 po",
     "chassis": "Châssis mince",
-    "statut": "Collection privée"
+    "statut": "Vendu"
   },
   {
     "id": 11,
@@ -170,6 +191,26 @@
     "statut": "Vendu"
   },
   {
+    "id": 29,
+    "titre": "Ivoire",
+    "image": "images/ivoire.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2025",
+    "dimensions": "36 x 48 po",
+    "chassis": "Châssis gallerie",
+    "statut": "Disponible"
+  },
+  {
+    "id": 8,
+    "titre": "Fleurs de minuit",
+    "image": "images/fleurs-de-minuit.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2025",
+    "dimensions": "16 x 48 po",
+    "chassis": "Châssis gallerie",
+    "statut": "Vendu"
+  },
+  {
     "id": 18,
     "titre": "Toréadore",
     "image": "images/toréadore.jpg",
@@ -200,24 +241,14 @@
     "statut": "Vendu"
   },
   {
-    "id": 21,
-    "titre": "Mon ours n'ours",
-    "image": "images/mon-ours-n-ours.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2025",
-    "dimensions": "36 x 48 po",
-    "chassis": "Châssis mince",
-    "statut": "Disponible"
-  },
-  {
     "id": 22,
-    "titre": "Mon ours n'ours",
-    "image": "images/mon-ours-n-ours.jpg",
+    "titre": "Quiétude au large",
+    "image": "images/quiétude-au-large.jpg",
     "technique": "Acrylique sur toile",
     "annee": "2025",
-    "dimensions": "36 x 48 po",
-    "chassis": "Châssis mince",
-    "statut": "Disponible"
+    "dimensions": "18 x 36 po",
+    "chassis": "Châssis gallerie",
+    "statut": "Vendu"
   },
   {
     "id": 23,
@@ -226,26 +257,6 @@
     "technique": "Acrylique sur toile",
     "annee": "2025",
     "dimensions": "18 x 30 po",
-    "chassis": "Châssis gallerie",
-    "statut": "Disponible"
-  },
-  {
-    "id": 24,
-    "titre": "Résilience",
-    "image": "images/résilience.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2026",
-    "dimensions": "36 x 36 po",
-    "chassis": "Châssis gallerie",
-    "statut": "Disponible"
-  },
-  {
-    "id": 25,
-    "titre": "Émergence",
-    "image": "images/émergence.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2026",
-    "dimensions": "24 x 36 po",
     "chassis": "Châssis gallerie",
     "statut": "Disponible"
   },
