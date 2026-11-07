@@ -178,5 +178,105 @@
     "dimensions": "36 x 48 po",
     "chassis": "Châssis mince",
     "statut": "Vendu"
+  },
+  {
+    "id": 19,
+    "titre": "Blue Bonnets",
+    "image": "images/blue-bonnets.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2025",
+    "dimensions": "36 x 36 po",
+    "chassis": "Châssis gallerie",
+    "statut": "Vendu"
+  },
+  {
+    "id": 20,
+    "titre": "Gorille",
+    "image": "images/gorille.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2022",
+    "dimensions": "36 x 48 po",
+    "chassis": "Châssis mince",
+    "statut": "Vendu"
+  },
+  {
+    "id": 21,
+    "titre": "Mon ours n'ours",
+    "image": "images/mon-ours-n-ours.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2025",
+    "dimensions": "36 x 48 po",
+    "chassis": "Châssis mince",
+    "statut": "Disponible"
+  },
+  {
+    "id": 22,
+    "titre": "Mon ours n'ours",
+    "image": "images/mon-ours-n-ours.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2025",
+    "dimensions": "36 x 48 po",
+    "chassis": "Châssis mince",
+    "statut": "Disponible"
+  },
+  {
+    "id": 23,
+    "titre": "Améthyste",
+    "image": "images/améthyste.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2025",
+    "dimensions": "18 x 30 po",
+    "chassis": "Châssis gallerie",
+    "statut": "Disponible"
+  },
+  {
+    "id": 24,
+    "titre": "Résilience",
+    "image": "images/résilience.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2026",
+    "dimensions": "36 x 36 po",
+    "chassis": "Châssis gallerie",
+    "statut": "Disponible"
+  },
+  {
+    "id": 25,
+    "titre": "Émergence",
+    "image": "images/émergence.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2026",
+    "dimensions": "24 x 36 po",
+    "chassis": "Châssis gallerie",
+    "statut": "Disponible"
+  },
+  {
+    "id": 26,
+    "titre": "Luxure",
+    "image": "images/luxure.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2026",
+    "dimensions": "20 x 30 po",
+    "chassis": "Châssis gallerie",
+    "statut": "Disponible"
+  },
+  {
+    "id": 27,
+    "titre": "Plumes d'ici",
+    "image": "images/plumes-d-ici.jpg",
+    "technique": "Acrylique sur papier aquarelle",
+    "annee": "2026",
+    "dimensions": "18 x 24 po",
+    "chassis": "",
+    "statut": "Disponible"
+  },
+  {
+    "id": 28,
+    "titre": "Coq-coq rico",
+    "image": "images/coq-coq-rico.jpg",
+    "technique": "Acrylique sur papier aquarelle",
+    "annee": "2026",
+    "dimensions": "22 x 30 po",
+    "chassis": "",
+    "statut": "Disponible"
   }
 ]
