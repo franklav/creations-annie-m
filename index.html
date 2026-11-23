@@ -126,10 +126,12 @@
                 const grid = document.getElementById('gallery-grid');
                 grid.innerHTML = items.map((item, index) => {
                     const isAvailable = !item.statut || item.statut === "Disponible";
+                    const badgeText = item.statut ? item.statut.replace(/\s*\(.*?\)/g, '') : '';
+
                     const statusBadge = !isAvailable ?
                         `<span class="absolute top-3 right-3 bg-stone-900/80 backdrop-blur-md text-stone-100 text-xs tracking-wider uppercase px-2.5 py-1 rounded shadow">
-                            ${item.statut}
-                         </span>` : '';
+                            ${badgeText}
+                        </span>` : '';
 
                     const imgStyle = !isAvailable ? "opacity-90 contrast-[0.95]" : "";
 
