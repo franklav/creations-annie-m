@@ -1,137 +1,32 @@
 [
   {
-    "id": 1,
-    "titre": "Le roi de la jungle",
-    "image": "images/le-roi-de-la-jungle.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2025",
-    "dimensions": "36 x 48 po",
-    "chassis": "Châssis mince",
-    "statut": "Vendu"
-  },
-
-  {
-    "id": 24,
-    "titre": "Résilience",
-    "image": "images/résilience.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2026",
-    "dimensions": "36 x 36 po",
-    "chassis": "Châssis gallerie",
-    "statut": "Disponible"
-  },
-  {
-    "id": 25,
-    "titre": "Émergence",
-    "image": "images/émergence.jpg",
+    "titre": "L'indomptable",
+    "image": "images/lindomptable.jpg",
     "technique": "Acrylique sur toile",
     "annee": "2026",
     "dimensions": "24 x 36 po",
-    "chassis": "Châssis gallerie",
+    "chassis": "Châssis galerie",
     "statut": "Disponible"
   },
   {
-    "id": 2,
     "titre": "Khâmon",
     "image": "images/khâmon.jpg",
     "technique": "Acrylique sur toile",
     "annee": "2026",
     "dimensions": "24 x 24 po",
-    "chassis": "Châssis gallerie",
+    "chassis": "Châssis galerie",
     "statut": "Disponible"
   },
   {
-    "id": 3,
-    "titre": "Le prédateur",
-    "image": "images/le-prédateur.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2025",
-    "dimensions": "24 x 24 po",
-    "chassis": "Châssis mince",
-    "statut": "Vendu"
-  },
-  {
-    "id": 4,
-    "titre": "L'implacable",
-    "image": "images/limplacable.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2025",
-    "dimensions": "24 x 36 po",
-    "chassis": "Châssis mince",
-    "statut": "Disponible"
-  },
-  {
-    "id": 5,
-    "titre": "Âme de la savane",
-    "image": "images/âme-de-la-savane.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2025",
-    "dimensions": "24 x 48 po",
-    "chassis": "Châssis mince",
-    "statut": "Disponible"
-  },
-  {
-    "id": 6,
-    "titre": "Bruce",
-    "image": "images/bruce.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2025",
-    "dimensions": "18 x 24 po",
-    "chassis": "Châssis mince",
-    "statut": "Vendu"
-  },
-  {
-    "id": 7,
-    "titre": "Bloup bloup",
-    "image": "images/bloup-bloup.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2025",
-    "dimensions": "18 x 24 po",
-    "chassis": "Châssis mince",
-    "statut": "Vendu"
-  },
-  {
-    "id": 9,
     "titre": "Entre l'or et la nuit",
     "image": "images/entre-lor-et-la-nuit.jpg",
     "technique": "Acrylique sur toile",
     "annee": "2026",
     "dimensions": "24 x 48 po",
-    "chassis": "Châssis gallerie",
-    "statut": "Vendu"
-  },
-    {
-    "id": 21,
-    "titre": "Mon ours n'ours",
-    "image": "images/mon-ours-n-ours.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2025",
-    "dimensions": "36 x 48 po",
-    "chassis": "Châssis mince",
-    "statut": "Disponible"
-  },
-  {
-    "id": 10,
-    "titre": "Panache givré",
-    "image": "images/panache-givré.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2024",
-    "dimensions": "24 x 24 po",
-    "chassis": "Châssis mince",
+    "chassis": "Châssis galerie",
     "statut": "Vendu"
   },
   {
-    "id": 11,
-    "titre": "Gros Louis",
-    "image": "images/gros-louis.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2024",
-    "dimensions": "24 x 36 po",
-    "chassis": "Châssis mince",
-    "statut": "Vendu"
-  },
-  {
-    "id": 12,
     "titre": "Rio",
     "image": "images/rio.jpg",
     "technique": "Acrylique sur toile",
@@ -141,17 +36,6 @@
     "statut": "Disponible"
   },
   {
-    "id": 13,
-    "titre": "Madame Fleurs",
-    "image": "images/madame-fleurs.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2025",
-    "dimensions": "36 x 48 po",
-    "chassis": "Châssis mince",
-    "statut": "Vendu"
-  },
-  {
-    "id": 14,
     "titre": "Renaissance",
     "image": "images/renaissance.jpg",
     "technique": "Acrylique sur toile",
@@ -161,17 +45,6 @@
     "statut": "Disponible"
   },
   {
-    "id": 15,
-    "titre": "Ma rivière Squatec",
-    "image": "images/ma-rivière-squatec.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2025",
-    "dimensions": "36 x 48 po",
-    "chassis": "Châssis mince",
-    "statut": "Vendu"
-  },
-  {
-    "id": 16,
     "titre": "Vagues",
     "image": "images/vagues.jpg",
     "technique": "Acrylique sur toile",
@@ -181,97 +54,42 @@
     "statut": "Vendu"
   },
   {
-    "id": 17,
     "titre": "Dualité",
     "image": "images/dualité.jpg",
     "technique": "Acrylique sur toile",
     "annee": "2026",
     "dimensions": "2 toiles 30 x 40 po",
-    "chassis": "Châssis gallerie",
+    "chassis": "Châssis galerie",
     "statut": "Vendu"
   },
   {
-    "id": 29,
-    "titre": "Ivoire",
-    "image": "images/ivoire.jpg",
+    "titre": "Résilience",
+    "image": "images/résilience.jpg",
     "technique": "Acrylique sur toile",
-    "annee": "2025",
-    "dimensions": "36 x 48 po",
-    "chassis": "Châssis gallerie",
-    "statut": "Disponible"
-  },
-  {
-    "id": 8,
-    "titre": "Fleurs de minuit",
-    "image": "images/fleurs-de-minuit.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2025",
-    "dimensions": "16 x 48 po",
-    "chassis": "Châssis gallerie",
-    "statut": "Vendu"
-  },
-  {
-    "id": 18,
-    "titre": "Toréadore",
-    "image": "images/toréadore.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2021",
-    "dimensions": "36 x 48 po",
-    "chassis": "Châssis mince",
-    "statut": "Vendu"
-  },
-  {
-    "id": 19,
-    "titre": "Blue Bonnets",
-    "image": "images/blue-bonnets.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2025",
+    "annee": "2026",
     "dimensions": "36 x 36 po",
-    "chassis": "Châssis gallerie",
-    "statut": "Vendu"
-  },
-  {
-    "id": 20,
-    "titre": "Gorille",
-    "image": "images/gorille.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2022",
-    "dimensions": "36 x 48 po",
-    "chassis": "Châssis mince",
-    "statut": "Vendu"
-  },
-  {
-    "id": 22,
-    "titre": "Quiétude au large",
-    "image": "images/quiétude-au-large.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2025",
-    "dimensions": "18 x 36 po",
-    "chassis": "Châssis gallerie",
-    "statut": "Vendu"
-  },
-  {
-    "id": 23,
-    "titre": "Améthyste",
-    "image": "images/améthyste.jpg",
-    "technique": "Acrylique sur toile",
-    "annee": "2025",
-    "dimensions": "18 x 30 po",
-    "chassis": "Châssis gallerie",
+    "chassis": "Châssis galerie",
     "statut": "Disponible"
   },
   {
-    "id": 26,
+    "titre": "Émergence",
+    "image": "images/émergence.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2026",
+    "dimensions": "24 x 36 po",
+    "chassis": "Châssis galerie",
+    "statut": "Disponible"
+  },
+  {
     "titre": "Luxure",
     "image": "images/luxure.jpg",
     "technique": "Acrylique sur toile",
     "annee": "2026",
     "dimensions": "20 x 30 po",
-    "chassis": "Châssis gallerie",
+    "chassis": "Châssis galerie",
     "statut": "Disponible"
   },
   {
-    "id": 27,
     "titre": "Plumes d'ici",
     "image": "images/plumes-d-ici.jpg",
     "technique": "Acrylique sur papier aquarelle",
@@ -281,7 +99,6 @@
     "statut": "Disponible"
   },
   {
-    "id": 28,
     "titre": "Coq-coq rico",
     "image": "images/coq-coq-rico.jpg",
     "technique": "Acrylique sur papier aquarelle",
@@ -289,5 +106,149 @@
     "dimensions": "22 x 30 po",
     "chassis": "",
     "statut": "Disponible"
+  },
+  {
+    "titre": "Le prédateur",
+    "image": "images/le-prédateur.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2025",
+    "dimensions": "24 x 24 po",
+    "chassis": "Châssis mince",
+    "statut": "Vendu"
+  },
+  {
+    "titre": "Le roi de la jungle",
+    "image": "images/le-roi-de-la-jungle.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2025",
+    "dimensions": "36 x 48 po",
+    "chassis": "Châssis mince",
+    "statut": "Vendu"
+  },
+  {
+    "titre": "L'implacable",
+    "image": "images/limplacable.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2025",
+    "dimensions": "24 x 36 po",
+    "chassis": "Châssis mince",
+    "statut": "Disponible"
+  },
+  {
+    "titre": "Âme de la savane",
+    "image": "images/âme-de-la-savane.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2025",
+    "dimensions": "24 x 48 po",
+    "chassis": "Châssis mince",
+    "statut": "Disponible"
+  },
+  {
+    "titre": "Bruce",
+    "image": "images/bruce.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2025",
+    "dimensions": "18 x 24 po",
+    "chassis": "Châssis mince",
+    "statut": "Collection privée"
+  },
+  {
+    "titre": "Bloup bloup",
+    "image": "images/bloup-bloup.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2025",
+    "dimensions": "18 x 24 po",
+    "chassis": "Châssis mince",
+    "statut": "Collection privée"
+  },
+  {
+    "titre": "Fleurs de minuit",
+    "image": "images/fleurs-de-minuit.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2025",
+    "dimensions": "16 x 48 po",
+    "chassis": "Châssis galerie",
+    "statut": "Collection privée"
+  },
+  {
+    "titre": "Madame Fleurs",
+    "image": "images/madame-fleurs.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2025",
+    "dimensions": "36 x 48 po",
+    "chassis": "Châssis mince",
+    "statut": "Vendu"
+  },
+  {
+    "titre": "Ma rivière Squatec",
+    "image": "images/ma-rivière-squatec.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2025",
+    "dimensions": "36 x 48 po",
+    "chassis": "Châssis mince",
+    "statut": "Vendu"
+  },
+  {
+    "titre": "Blue Bonnets",
+    "image": "images/blue-bonnets.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2025",
+    "dimensions": "36 x 36 po",
+    "chassis": "Châssis galerie",
+    "statut": "Vendu"
+  },
+  {
+    "titre": "Mon ours n'ours",
+    "image": "images/mon-ours-n-ours.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2025",
+    "dimensions": "36 x 48 po",
+    "chassis": "Châssis mince",
+    "statut": "Disponible"
+  },
+  {
+    "titre": "Améthyste",
+    "image": "images/améthyste.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2025",
+    "dimensions": "18 x 30 po",
+    "chassis": "Châssis galerie",
+    "statut": "Disponible"
+  },
+  {
+    "titre": "Panache givré",
+    "image": "images/panache-givré.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2024",
+    "dimensions": "24 x 24 po",
+    "chassis": "Châssis mince",
+    "statut": "Collection privée"
+  },
+  {
+    "titre": "Gros Louis",
+    "image": "images/gros-louis.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2024",
+    "dimensions": "24 x 36 po",
+    "chassis": "Châssis mince",
+    "statut": "Vendu"
+  },
+  {
+    "titre": "Gorille",
+    "image": "images/gorille.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2022",
+    "dimensions": "36 x 48 po",
+    "chassis": "Châssis mince",
+    "statut": "Vendu"
+  },
+  {
+    "titre": "Toréadore",
+    "image": "images/toréadore.jpg",
+    "technique": "Acrylique sur toile",
+    "annee": "2021",
+    "dimensions": "36 x 48 po",
+    "chassis": "Châssis mince",
+    "statut": "Vendu"
   }
 ]
